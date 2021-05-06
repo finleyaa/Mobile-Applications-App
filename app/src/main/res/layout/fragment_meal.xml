@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_rounded_primary"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Meal">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:includeFontPadding="false"
+        android:text="Title"
+        android:textColor="@color/colorAccent"
+        android:theme="@style/Body" />
+
+    <TextView
+        android:id="@+id/tvCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:includeFontPadding="false"
+        android:text="Calories: 0"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:theme="@style/Body" />
+
+    <Button
+        android:id="@+id/btnAddToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_rounded_accent"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="24dp"
+        android:text="Add to favourites"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:theme="@style/Body" />
+
+</LinearLayout>

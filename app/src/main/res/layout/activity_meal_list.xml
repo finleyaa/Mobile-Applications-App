@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="64dp"
+    tools:context=".MealList">
+
+    <TextView
+        android:id="@+id/tvMealListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="Favourite Meals"
+        android:textColor="@color/colorPrimary"
+        android:theme="@style/Header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMealListItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:includeFontPadding="false"
+        android:lineHeight="20sp"
+        android:textColor="@color/colorPrimary"
+        android:theme="@style/Body"
+        app:layout_constraintTop_toBottomOf="@+id/tvMealListHeader" />
+
+    <Button
+        android:id="@+id/btnClearMealList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded_primary"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="24dp"
+        android:text="Clear"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:theme="@style/Body"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnGenerator"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGenerator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded_primary"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="24dp"
+        android:text="Go to generator"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:theme="@style/Body"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnClearMealList" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

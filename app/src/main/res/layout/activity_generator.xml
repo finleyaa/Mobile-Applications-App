@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="64dp"
+    tools:context=".Generator">
+
+    <TextView
+        android:id="@+id/tvGenerateHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="Generate a meal"
+        android:textColor="@color/colorPrimary"
+        android:theme="@style/Header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/flMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenerateHeader" />
+
+    <LinearLayout
+        android:id="@+id/llCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnGenerate">
+
+        <TextView
+            android:id="@+id/tvCaloriesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Max calories: "
+            android:textColor="@color/colorPrimary"
+            android:theme="@style/Body" />
+
+        <EditText
+            android:id="@+id/etCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_round_white"
+            android:hint="Enter calories"
+            android:includeFontPadding="false"
+            android:inputType="number"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:theme="@style/Body" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded_primary"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="24dp"
+        android:text="Generate!"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:theme="@style/Body"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnMealList"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMealList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded_primary"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="24dp"
+        android:text="Favourite meals"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:theme="@style/Body"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnGenerate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

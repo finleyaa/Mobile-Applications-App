@@ -1,0 +1,24 @@
+{
+    "meals": [
+        {
+            "title": "Poached eggs with black beans and spinach",
+            "calories": 268
+        },
+        {
+            "title": "Turkey sausage and pesto breakfast sandwich",
+            "calories": 259
+        },
+        {
+            "title": "Avocado sandwich",
+            "calories": 464
+        },
+        {
+            "title": "Tuna and avocado salad",
+            "calories": 315
+        },
+        {
+            "title": "Mexican bean soup with guacamole",
+            "calories": 391
+        }
+    ]
+}
